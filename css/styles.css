@@ -12,6 +12,31 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+} */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  outline: 2px solid red;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 :root {
   --basic-color: #2e2f42;
   --second-color: #434455;
@@ -22,24 +47,38 @@ body {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
 }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .link {
   text-decoration: none;
 }
-.list {
-  list-style: none;
-}
 
-.menu-item {
-  font-family: "Roboto", sans-serif;
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--basic-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--basic-color);
 }
-.menu-item:hover,
-.menu-item:focus,
-.menu-item.current {
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+.item {
+  margin-right: 40px;
+}
+.site-nav:hover,
+.site-nav:focus,
+.site-nav.current {
   color: var(--active-color);
 }
 
@@ -67,6 +106,17 @@ body {
 .phone:focus {
   color: #404bbf;
 }
+.nav-adress {
+  display: flex;
+  margin-left: 332px;
+}
+
+.nav-adress .mail + .phone {
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 /* hero */
 .hero-box {
   background-color: var(--basic-color);
@@ -76,6 +126,7 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--alt-color);
 }
 .button-hero {
