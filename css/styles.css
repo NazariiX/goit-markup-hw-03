@@ -27,6 +27,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   width: 1440px;
@@ -109,12 +111,15 @@ body {
 }
 .nav-adress {
   display: flex;
-  margin-left: 332px;
+ 
 }
-
 .main-nav {
   display: flex;
   align-items: center;
+}
+.nav-container{
+  display: flex;
+  margin-left: auto;
 }
 /* hero */
 .hero-box {
@@ -127,6 +132,7 @@ body {
   padding-right: 15px;
   background-color: var(--basic-color);
   text-align: center;
+  
 }
 .hero {
   font-size: 56px;
