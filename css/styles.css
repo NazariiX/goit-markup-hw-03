@@ -32,9 +32,11 @@ img {
 }
 .container {
   max-width: 1158px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  outline: 2px solid rgb(166, 0, 255);
 }
 .nav {
   display: flex;
@@ -60,7 +62,7 @@ body {
 
 .site-nav {
   display: flex;
-  margin-left: 70px;
+  margin-left: 76px;
 }
 .site-nav .link {
   display: block;
@@ -110,52 +112,56 @@ body {
 }
 .nav-adress {
   display: flex;
-}
-.main-nav {
-  display: flex;
-  align-items: center;
+  margin-left: auto;
 }
 .nav-container {
   display: flex;
   margin-left: auto;
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* hero */
-.hero-box {
-  outline: 2px solid red;
+.section-hero {
   background-color: var(--basic-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
+  display: flex;
 }
 .hero {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--alt-color);
-  padding-top: 188px;
   color: var(--primery-background);
   max-width: 500px;
-  margin: 0px auto;
   text-align: center;
-  padding-bottom: 48px;
 }
 .button-hero {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: none;
+  margin-top: 48px;
+  padding: 16px 32px;
   color: #ffffff;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-.section {
 }
 
 .button-hero:hover,
 .button-hero:focus {
   background: #404bbf;
 }
+/* ___________hero end______________ */
+
 .card-container {
   display: flex;
   flex-basis: calc(100% / 3 - 20px);
